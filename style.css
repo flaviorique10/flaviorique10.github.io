@@ -1,0 +1,128 @@
+:root {
+    --cor-fundo: #121212;
+    --cor-card: #1E1E1E;
+    --cor-texto: #E0E0E0;
+    --cor-titulo: #FFFFFF;
+    --cor-destaque: #00aaff;
+    --cor-borda: #333;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    color: var(--cor-titulo);
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header .subtitulo {
+    color: var(--cor-destaque);
+    font-size: 1.2em;
+    margin-top: 15px;
+    /* Ajuste para dar espaço */
+}
+
+.links-contato {
+    margin-top: 20px;
+}
+
+.links-contato a {
+    color: var(--cor-texto);
+    font-size: 1.8em;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.links-contato a:hover {
+    color: var(--cor-destaque);
+}
+
+.secao {
+    background-color: var(--cor-card);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid var(--cor-borda);
+}
+
+.secao h2 {
+    color: var(--cor-titulo);
+    border-bottom: 2px solid var(--cor-destaque);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#skills .lista-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills .skill {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: 1px solid var(--cor-borda);
+}
+
+.experiencia-item,
+.formacao-item {
+    margin-bottom: 20px;
+}
+
+/* Remove a margem do último item para não criar espaço extra */
+.experiencia-item:last-child,
+.formacao-item:last-child {
+    margin-bottom: 0;
+}
+
+.experiencia-item h3,
+.formacao-item h3 {
+    color: var(--cor-titulo);
+    margin-bottom: 5px;
+}
+
+.experiencia-item .empresa,
+.formacao-item .instituicao {
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+
+.experiencia-item .periodo,
+.formacao-item .periodo {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.experiencia-item ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-size: 0.9em;
+}
