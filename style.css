@@ -126,3 +126,12 @@ footer {
     color: #aaa;
     font-size: 0.9em;
 }
+
+.foto-perfil {
+    width: 150px;          
+    height: 150px;          
+    border-radius: 50%;     
+    border: 4px solid var(--cor-destaque); 
+    object-fit: cover;      
+    margin-bottom: 20px;    
+}
